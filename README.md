@@ -1,10 +1,10 @@
-# ADR Notion publisher 
+# MD Notion publisher 
 
-ADR Notion publisher
+MD Notion publisher
 
 ## Description
 
-A PHP-based console command to publish your ADR folder to Notion databases.
+A PHP-based console command to publish your MD files, either a specific one or all from a specific folder, to Notion databases.
 
 ## Getting Started
 
