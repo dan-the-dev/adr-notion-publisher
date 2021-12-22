@@ -1,9 +1,20 @@
-version: '3.7'
+version: "3.7"
 
 services:
   app:
     build:
-      context: .
-      dockerfile: Dockerfile
-    image: 'danthedev/mdnotionpublisher'
-    container_name: md-notion-publisher
+      args:
+        user: sammy
+        uid: 1000
+      context: ./
+    image: minicli-php8-dev
+    restart: unless-stopped
+    working_dir: /home/sammy
+    volumes:
+      - ./:/home/sammy
+    networks:
+      - minicli-dev
+
+networks:
+  minicli-dev:
+    driver: bridge
