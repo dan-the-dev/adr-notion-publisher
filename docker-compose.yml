@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: 'danthedev/mdnotionpublisher'
+    container_name: md-notion-publisher

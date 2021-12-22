@@ -1,5 +1,8 @@
 build:
-	docker build -t my-php-app .
+	docker-compose build
 
 run:
-	docker run --rm --name hello-world-test my-php-app
+	docker-compose up -d
+
+down:
+	docker-compose down
