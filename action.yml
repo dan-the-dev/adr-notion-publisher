@@ -1,0 +1,6 @@
+# action.yml
+name: 'MD Notion Publisher'
+description: 'Publish your .md files to a Notion database'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

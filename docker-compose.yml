@@ -3,15 +3,12 @@ version: "3.7"
 services:
   app:
     build:
-      args:
-        user: sammy
-        uid: 1000
       context: ./
     image: minicli-php8-dev
     restart: unless-stopped
-    working_dir: /home/sammy
+    working_dir: /home/dan
     volumes:
-      - ./:/home/sammy
+      - ./:/home/dan
     networks:
       - minicli-dev
 
