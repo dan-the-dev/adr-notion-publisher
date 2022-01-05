@@ -14,7 +14,9 @@ A PHP-based console command to publish your MD files, either a specific one or a
 
 ### Installing and executing
 
-Run make command: `make install`
+To install the application, use make command: `make install`.
+
+After installation, you can run any implemented command with the make command `make minicli-cmd cmd=help`.
 
 ## Code conventions
 
