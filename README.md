@@ -10,11 +10,11 @@ A PHP-based console command to publish your MD files, either a specific one or a
 
 ### Dependencies
 
-...
+- [MiniCli](https://github.com/minicli/minicli) - PHP CLI library
 
 ### Installing and executing
 
-...
+Run make command: `make install`
 
 ## Code conventions
 

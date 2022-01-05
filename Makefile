@@ -10,5 +10,9 @@ down:
 composer-install:
 	docker-compose exec app composer install
 
-help:
-	docker-compose exec app php minicli help
+minicli-cmd:
+	docker-compose exec app php minicli $(cmd)
+
+install: build run composer-install
+
+restart: down run
