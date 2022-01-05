@@ -16,3 +16,6 @@ minicli-cmd:
 install: build run composer-install
 
 restart: down run
+
+test:
+	docker-compose exec app php ./vendor/bin/phpunit tests
